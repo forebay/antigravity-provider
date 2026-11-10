@@ -47,7 +47,7 @@ async function capability() {
   };
 }
 
-describe("the antigravity-auth api plugin", () => {
+describe("the antigravity-provider api plugin", () => {
   it("provides exactly the capabilities its manifest declares", async () => {
     const plugin = (await import("./plugin.js")).default;
     const { context, provided } = contextSpy();

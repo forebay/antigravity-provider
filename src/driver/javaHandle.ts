@@ -1,4 +1,4 @@
-// The delegation shell that runs antigravity-auth's `handleIr` decision loop (and the account-view
+// The delegation shell that runs antigravity-provider's `handleIr` decision loop (and the account-view
 // quota/catalog helpers below) through the TeaVM-compiled Java orchestrator
 // (`AntigravityHandleOrchestrator` plus `AntigravityProviderJs`'s other exports), reached through
 // the statically imported seam in `java.ts`.

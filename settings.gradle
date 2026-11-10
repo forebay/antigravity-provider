@@ -2,7 +2,7 @@ plugins {
     id "org.gradle.toolchains.foojay-resolver-convention" version "0.8.0"
 }
 
-rootProject.name = "antigravity-auth-java"
+rootProject.name = "antigravity-provider"
 
 include ":antigravity-provider"
 include ":antigravity-teavm"

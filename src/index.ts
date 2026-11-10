@@ -18,7 +18,7 @@ const README_SPEC = {
         CC[Claude Code] -->|claude-code-loader proxy| HANDLE
     end
 
-    subgraph Driver [antigravity-auth driver]
+    subgraph Driver [antigravity-provider driver]
         HANDLE["handleIr(ir, ctx) - delegates to the Java orchestrator"]
         LOGIN["login - CLI: antigravity login"]
         HANDLE -->|POST + endpoint fallback| GOOGLE[(Cloud Code Assist API)]
@@ -58,7 +58,7 @@ const README_SPEC = {
 };
 
 // The readme registration name is the config NAME the driver reads (config/antigravity.json),
-// which the manifest states too; the plugin id stays antigravity-auth.
+// which the manifest states too; the plugin id stays antigravity-provider.
 /**
  * The app-shaped plugin hook, which is what an app that invokes every export as a hook loads.
  *

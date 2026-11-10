@@ -18,7 +18,7 @@ import java.util.Map;
 /**
  * A typed {@link io.github.intisy.ai.shared.routing.OAuthProvider} implementing antigravity's
  * Google OAuth flow ({@code authorizeAntigravity}/{@code exchangeAntigravity}, plus a
- * {@code fetchProjectID} helper). Mirrors claude-code-auth's {@code ClaudeOAuth} shape, but
+ * {@code fetchProjectID} helper). Mirrors claude-code-provider's {@code ClaudeOAuth} shape, but
  * antigravity is a LOOPBACK flow: the redirect URI is a local callback server, not a
  * paste-the-code flow. The OAuth client stays the SAME shared Google installed-app client
  * {@link AntigravityBackend} already uses for token refresh (see the antigravity-account-isolation
@@ -53,7 +53,7 @@ final class AntigravityOAuth {
 
     static AuthorizeInfo authorize() {
         // PKCE S256: verifier is base64url(64 random bytes); challenge = base64url(sha256(verifier
-        // UTF-8 bytes)) -- same construction as claude-code-auth's ClaudeOAuth. Any length in the
+        // UTF-8 bytes)) -- same construction as claude-code-provider's ClaudeOAuth. Any length in the
         // RFC 7636 range [43,128] chars is valid, and no fixture asserts an exact verifier length
         // since it is random on every call.
         byte[] raw = new byte[64];

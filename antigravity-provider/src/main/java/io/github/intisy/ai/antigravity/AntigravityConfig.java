@@ -12,7 +12,7 @@ import java.util.Map;
 
 /**
  * A typed {@link io.github.intisy.ai.shared.routing.ConfigurableProvider} implementing
- * antigravity's config surface, following claude-code-auth's {@code ClaudeConfig}
+ * antigravity's config surface, following claude-code-provider's {@code ClaudeConfig}
  * GET-merged/PUT-persisted pattern. Reads/writes the config store's on-disk file
  * ({@code config/antigravity.json}) via the injected {@link io.github.intisy.ai.api.seam.Store}
  * (never a self-assembled {@code FileStore}), so JVM and host share one settings file.

@@ -3,7 +3,7 @@
 import { runPluginContract } from "@intisy-ai/basekit/testing";
 
 runPluginContract({
-  name: "antigravity-auth",
+  name: "antigravity-provider",
   entry: "dist/index.js",
   configName: "antigravity",
   app: "both",

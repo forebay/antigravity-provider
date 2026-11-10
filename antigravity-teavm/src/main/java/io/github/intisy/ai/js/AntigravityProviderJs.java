@@ -53,7 +53,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * TeaVM JS export surface over antigravity-auth's Java. Lives in the SAME package ({@code
+ * TeaVM JS export surface over antigravity-provider's Java. Lives in the SAME package ({@code
  * io.github.intisy.ai.js}) as core-proxy's {@code :teavm} module (a Gradle project dependency, see
  * {@code antigravity-teavm/build.gradle}), so {@code SimpleJsonCodec} is referenced unqualified
  * exactly like {@code CoreProxyJs}/{@code ClaudeProviderJs} do, NOT duplicated here.

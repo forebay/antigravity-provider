@@ -18,7 +18,7 @@ import java.util.Map;
  * (blocking-shaped, {@code execute(accountId, preparedRef): AttemptResult}) whose implementation is
  * actually a JS-provided async function ({@code fetch} + the IP-proxy pool in production; a delayed
  * fake in the node smoke), bridged via TeaVM's {@code @Async} native method + {@link AsyncCallback}
- * mechanism, the EXACT shape of claude-code-auth's {@code JsAttemptExecutorBridge} and core-proxy's
+ * mechanism, the EXACT shape of claude-code-provider's {@code JsAttemptExecutorBridge} and core-proxy's
  * {@code JsHttpClientBridge}.
  *
  * <p>Mechanism: {@link #execute} looks synchronous to the orchestrator but internally suspends on

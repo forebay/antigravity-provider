@@ -87,7 +87,7 @@ export async function refreshVersions(log?: (message: string) => void) {
   lastFetchAt = now;
   try {
     const res = await timeoutFetch(RELEASES_URL, {
-      headers: { Accept: "application/vnd.github+json", "User-Agent": "antigravity-auth" },
+      headers: { Accept: "application/vnd.github+json", "User-Agent": "antigravity-provider" },
     }, 8000);
     if (!res.ok) return;
     const data = await res.json();

@@ -27,7 +27,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * io.github.intisy.ai.jvm.AiJava#accountManager}, which this provider cannot call directly, since a
  * {@code Provider} is handed only {@code HandlerCtx}, never an {@code AiJava} instance).
  *
- * <p>Store-threading (mirrors claude-code-auth's {@code ClaudeBackend}): {@link #forCtx} prefers
+ * <p>Store-threading (mirrors claude-code-provider's {@code ClaudeBackend}): {@link #forCtx} prefers
  * the server's injected {@link HandlerCtx#store}, so this backend never self-assembles a {@code
  * FileStore} when a host has one to give; {@link #forConfigDir}'s {@code FileStore} path is kept
  * only as the store-less-host fallback {@link #forCtx} itself falls back to.

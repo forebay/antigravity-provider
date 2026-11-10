@@ -1,5 +1,5 @@
 {
-  "name": "antigravity-auth",
+  "name": "antigravity-provider",
   "version": "1.17.7",
   "description": "Google Antigravity provider for OpenCode and Claude Code, built on basekit/auth (multi-account rotation, quota management, proxy support)",
   "main": "dist/index.js",
@@ -11,7 +11,7 @@
   "author": "intisy",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/forebay/antigravity-auth.git"
+    "url": "git+https://github.com/forebay/antigravity-provider.git"
   },
   "keywords": [
     "opencode",

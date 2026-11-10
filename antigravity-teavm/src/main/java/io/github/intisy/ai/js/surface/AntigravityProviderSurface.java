@@ -9,7 +9,7 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 
 /**
- * antigravity-auth's JavaScript module surface, typed for a TypeScript consumer.
+ * antigravity-provider's JavaScript module surface, typed for a TypeScript consumer.
  *
  * @implNote Declares the shape {@code AntigravityProviderJs} actually exports; it is never
  * implemented, only emitted. The export class speaks JSPromise, JSString and eleven JSO functors,

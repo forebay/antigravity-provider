@@ -10,4 +10,4 @@ Seamless integration of free Antigravity AI models across both platforms.
 - [ ] **OpenCode Integration**: Must integrate with OpenCode to list itself in the 'oc auth login' menu under the Google provider.
 
 ## Architectural Notes
-- **Legacy Structure**: The current opencode/plugin.ts is massive (~150KB). To achieve the "same UI design and structure" goal shared with claude-code-auth, this monolith must be refactored into smaller, modular components mirroring claude-code-auth's src/ directory.
+- **Legacy Structure**: The current opencode/plugin.ts is massive (~150KB). To achieve the "same UI design and structure" goal shared with claude-code-provider, this monolith must be refactored into smaller, modular components mirroring claude-code-provider's src/ directory.

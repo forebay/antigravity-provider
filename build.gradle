@@ -1,4 +1,4 @@
-// antigravity-auth's Java module: a self-contained Gradle build living alongside antigravity-auth's
+// antigravity-provider's Java module: a self-contained Gradle build living alongside antigravity-provider's
 // TS (../src, ../package.json). Does NOT reuse ai-java's root build.gradle wholesale (its
 // io.github.intisy.online-gradle preset is ai-java-repo-specific), but applies the github-gradle
 // publishing recipe scoped to :antigravity-provider only (the one publishable artifact in this

@@ -31,19 +31,19 @@ dependencies {
 // Keep the jar filename version-less (antigravity-provider.jar) even though project.version is
 // set (for publishGithub's package version): publishGithub's artifacts block below references
 // build/libs/antigravity-provider.jar by that exact name, and the uploaded asset is renamed to
-// antigravity-auth-provider.jar from `repo` + classifier anyway.
+// antigravity-provider-provider.jar from `repo` + classifier anyway.
 jar {
     archiveVersion = ""
 }
 
 publishGithub {
-    // :antigravity-provider is a subdirectory of antigravity-auth's own repo with no .git of its
+    // :antigravity-provider is a subdirectory of antigravity-provider's own repo with no .git of its
     // own inside java/antigravity-provider, so publishGithub's default git-remote lookup fails.
     // Set owner/repo explicitly; these also drive the uploaded asset name:
-    // antigravity-auth-provider.jar (from `repo` + classifier), which is what ai-java's
+    // antigravity-provider-provider.jar (from `repo` + classifier), which is what ai-java's
     // GithubOrgProviderSource scanner matches.
     owner = "forebay"
-    repo = "antigravity-auth"
+    repo = "antigravity-provider"
     releaseName = "Antigravity provider ${project.findProperty('artifact_version') ?: project.version}"
     artifacts {
         artifact {
