@@ -1,0 +1,15 @@
+{
+  "format": 1,
+  "importName": "antigravity-provider",
+  "description": "Signs in to Google Antigravity accounts and sends requests through them.",
+  "topics": [
+    "ai",
+    "ai-provider",
+    "ai-proxy",
+    "forebay",
+    "gemini",
+    "llm",
+    "provider",
+    "typescript"
+  ]
+}
